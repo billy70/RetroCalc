@@ -193,7 +193,6 @@
                                                 </constraints>
                                                 <state key="normal" image="divide"/>
                                                 <connections>
-                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="64b-95-fvN"/>
                                                     <action selector="onDividePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bgW-Ka-JCC"/>
                                                 </connections>
                                             </button>
@@ -205,7 +204,6 @@
                                                 </constraints>
                                                 <state key="normal" image="multiply"/>
                                                 <connections>
-                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="re3-xN-7Uy"/>
                                                     <action selector="onMultiplyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JoU-dF-Cul"/>
                                                 </connections>
                                             </button>
@@ -222,7 +220,6 @@
                                                 </constraints>
                                                 <state key="normal" image="subtract"/>
                                                 <connections>
-                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qro-5C-0Mw"/>
                                                     <action selector="onSubtractPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Y2-5k-6AM"/>
                                                 </connections>
                                             </button>
@@ -234,7 +231,6 @@
                                                 </constraints>
                                                 <state key="normal" image="add"/>
                                                 <connections>
-                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mph-Uk-XeQ"/>
                                                     <action selector="onAddPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VSd-Jm-Py3"/>
                                                 </connections>
                                             </button>
@@ -246,7 +242,6 @@
                                                 </constraints>
                                                 <state key="normal" image="equal"/>
                                                 <connections>
-                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bq8-Gz-HDR"/>
                                                     <action selector="onEqualPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NZ5-HE-ogk"/>
                                                 </connections>
                                             </button>
