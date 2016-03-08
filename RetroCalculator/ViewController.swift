@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         case Multiply = "*"
         case Subtract = "-"
         case Add = "+"
-        case Equals = "="
         case Empty = "Empty"
     }
     
@@ -28,6 +27,7 @@ class ViewController: UIViewController {
     var leftValString = ""
     var rightValString = ""
     var currentOperation: Operation = Operation.Empty
+    var result = ""
     
 
     override func viewDidLoad() {
@@ -75,11 +75,40 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onEqualPressed(sender: AnyObject) {
-        processOperation(Operation.Equals)
+        processOperation(currentOperation)
     }
     
     func processOperation(op: Operation) {
         playSound()
+        
+        if currentOperation != Operation.Empty {
+             if runningNumber != "" {
+                rightValString = runningNumber
+                runningNumber = ""
+                
+                switch currentOperation {
+                case .Add:
+                    result = "\(Double(leftValString)! + Double(rightValString)!)"
+                case .Subtract:
+                    result = "\(Double(leftValString)! - Double(rightValString)!)"
+                case .Multiply:
+                    result = "\(Double(leftValString)! * Double(rightValString)!)"
+                case .Divide:
+                    result = "\(Double(leftValString)! / Double(rightValString)!)"
+                case .Empty:
+                    break
+                }
+                
+                leftValString = result
+                outputLbl.text = result
+            }
+        } else {
+            // This is the first time an operator has been pressed.
+            leftValString = runningNumber
+            runningNumber = ""
+        }
+        
+        currentOperation = op
     }
     
     func playSound() {
