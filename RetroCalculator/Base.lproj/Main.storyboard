@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +17,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space-bg" translatesAutoresizingMaskIntoConstraints="NO" id="9gO-bl-pfh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9gO-bl-pfh" secondAttribute="height" multiplier="1:1" id="zc4-Cs-LwS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9gO-bl-pfh" secondAttribute="bottom" id="Cqu-hZ-pCT"/>
+                            <constraint firstItem="9gO-bl-pfh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="O9p-R6-vT9"/>
+                            <constraint firstAttribute="trailing" secondItem="9gO-bl-pfh" secondAttribute="trailing" id="fhX-od-w1E"/>
+                            <constraint firstItem="9gO-bl-pfh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="scU-49-0yf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="885" y="657"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="space-bg" width="988" height="946"/>
+    </resources>
 </document>
