@@ -57,9 +57,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="AWy-Lf-ZLK">
                                 <rect key="frame" x="194" y="116" width="213" height="438"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-button" translatesAutoresizingMaskIntoConstraints="NO" id="GnQ-fu-7sc">
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTE-QY-PKZ">
                                         <rect key="frame" x="0.0" y="0.0" width="213" height="93"/>
-                                    </imageView>
+                                        <state key="normal" title="Button" image="clear-button"/>
+                                    </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="AC2-PT-fcA">
                                         <rect key="frame" x="0.0" y="99" width="213" height="63"/>
                                         <subviews>
